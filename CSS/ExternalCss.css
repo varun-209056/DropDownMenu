@@ -1,0 +1,70 @@
+
+nav{
+    background-color: aliceblue;
+}
+.flex-container{
+    display: flex;
+}
+
+.left-menu{
+    flex: 20%;
+}
+.right-menu{
+    flex: 80%;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline;
+    margin-left: 30px;
+}
+
+nav ul li a{
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+.dropdown-list
+{
+    color: indigo;
+}
+.dropdown .dropdown-list{
+    display: none;
+    position: absolute;
+    background-color: antiquewhite;
+    width: 160px;
+    left: 650px;
+}
+
+.dropdown:hover .dropdown-list{
+    display: block;
+}
+
+#slider{
+    height: 600px;
+    width: 100%;
+    background-image: url(../images/cleaning-service-flat-vector-8360874.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: firstone;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes firstone{
+    from{
+        background-image: url(../images/cleaning-service-flat-vector-8360874.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    to{
+        background-image: url(../images/cleaning-service-sign-vector-8539835.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
